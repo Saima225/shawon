@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(14, 14, 48);
+  margin-top: 50px;
+}
+   
+ header{
+   
+   position: relative;
+   z-index: 0;
+}
+
+.particles-js-canvas-el{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.bday{
+   
+    /* margin-top: 80px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 80px; */
+}
+.bday h1{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Mochiy Pop P One', sans-serif;
+color: #d95e24e0;
+background: linear-gradient(180deg, red 0%, blue 110%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 80px;
+text-align: center;
+cursor: pointer;
+font-size: 100px;
+margin: 0;
+padding: 0;
+position: relative;
+z-index: 0;
+
+}
+.name h1{
+    position: relative;
+    z-index: 0;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #d95e24e0;
+    background: linear-gradient(180deg, red 0%, blue 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    text-align: center;
+    cursor: pointer;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    transition: .4s all ease-in-out;
+   
+}
+.music{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    z-index: 0;
+}
+@font-face{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    src: url(../fonts/bday.ttf);
+  }
+.name h1:hover{
+    /* -webkit-box-reflect: below -8px -webkit-gradient(linear,right top,right bottom,from(transparent), color-stop(85%,transparent), to(rgb(5, 34, 34))); */
+    background: linear-gradient(180deg, rgb(170, 8, 65) 20%, rgb(9, 99, 76) 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #d9243ce0;
+    position: relative;
+    z-index: 0;
+}
+.wrapper{
+    background-color: rgb(14, 14, 48);
+    position: relative;
+    width: 320px;
+    margin:150px auto;
+    perspective: 1000px;
+    margin-bottom: 800px;
+}
+   .img-area{
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       transform-style: preserve-3d;
+       transform: rotateY(-360deg) translateZ(-300px);
+       animation: animate 25s steps(1000,end) infinite;
+
+   }
+    .single-img{
+        position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+   
+    
+   }
+   .single-img img{
+width: 300px;
+height: 200px;
+border: 5px solid #ffff;
+
+}
+   .single-img.img-one{
+       transform: rotateY(0deg) translateZ(300px);
+       background-color: transparent;
+       cursor: pointer;
+       transition: .4s all ease-in-out;
+   }
+   .single-img.img-two{
+    transform: rotateY(60deg) translateZ(300px);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+    
+}
+.single-img.img-three{
+    transform: rotateY(120deg) translateZ(300px);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+    
+}
+.single-img.img-four{
+    transform: rotateY(180deg) translateZ(300px);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+   
+}
+.single-img.img-five{
+    transform: rotateY(240deg) translateZ(300px);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+.single-img.img-six{
+    transform: rotateY(300deg) translateZ(300px);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+ 
+}
+    
+img{
+    filter: grayscale(80%);
+    transition: 1s;
+
+}
+img:hover{
+    filter: grayscale(0);
+    transition: 1s;
+    
+}
+@keyframes animate{
+    from{
+        transform: rotateY(-360deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+.content{
+    background-color: rgb(14, 14, 48);
+
+}
+.content p{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgb(17, 83, 14) 0%, rgb(88, 28, 80) 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    color: #d95e24e0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-style: inherit;
+    font-weight: 500;
+    padding-bottom: 20px;
+    
+}
+.example{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
